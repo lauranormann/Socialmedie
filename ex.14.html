@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vores Sociale Medie Brug</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffcce6; 
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ff66b2;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            color: #ff80bf;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            background-color: #ff99cc; 
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #ff66b2; 
+        }
+        @keyframes pop-in {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        h1, p, .link-button {
+            animation: pop-in 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Velkommen til Vores Sociale Medie Brug</h1>
+    <p>Mød Louise, Laura og Julie og se vores sociale medie verden</p>
+
+   
+    <a href="file:///Users/macbookair/Documents/workshop%20DPD/ex11.html#" class="link-button">Tryk her for at komme videre</a>
+
+
+    <script>
+        document.querySelector('.link-button').addEventListener('click', function() {
+            alert('Velkommen til vores sociale medie side!');
+        });
+    </script>
+</body>
+</html>
